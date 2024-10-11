@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.service-section{
+    padding: 0px 60px;
+}
+.service-section h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.service-section h1::after{
+content: "";
+   width:200px;
+   height:7px;
+   background-color: yellowgreen;
+   display: flex;
+   margin: auto;
+}
+
+.cardsection{
+    text-align: center;
+    margin-top:60px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+}
+.cardsection>div{
+    padding:30px 10px;
+    background-color: #5e5e5e;
+    cursor:pointer;
+}
+.cardsection>div:hover{
+    background-color:#8c8c8c;
+    transition:0.5s ease-in
+}
+.cardsection h2{
+    font-family:sans-serif;
+    color:#fff;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+.cardsection p{
+    color:#fff;
+    margin-left: 12px;
+    letter-spacing: 1px;
+}
+.cardsection a{
+    background-color:yellowgreen;
+    text-decoration: none;
+    margin-top: 12px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.cardsection a:hover{
+background-color:yellow;
+transition: 1sec ease-in-out;
+}
+@media screen and (max-width:768pc){
+    .cardsection{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
